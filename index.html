@@ -1,60 +1,316 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Resume | Adya R</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5efe6;
+            color: #33261f;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: #3b2922;
+            color: white;
+            padding: 45px 35px;
+            border-radius: 18px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #e7d8c9;
+        }
+
+        .contact {
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #f0d2ad;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        /* Sections */
+        section {
+            background: white;
+            padding: 28px 30px;
+            margin-bottom: 22px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        h2 {
+            color: #5b3b2e;
+            margin-bottom: 18px;
+            font-size: 24px;
+            border-bottom: 2px solid #e4d4c3;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #3b2922;
+            margin-bottom: 6px;
+        }
+
+        /* About */
+        .about {
+            font-size: 16px;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .year {
+            color: #87624d;
+            font-size: 14px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eee1d2;
+            color: #4b3428;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project {
+            border-left: 4px solid #8b6049;
+            padding-left: 18px;
+        }
+
+        .project p {
+            margin-top: 8px;
+        }
+
+        /* Languages */
+        .languages {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .language {
+            padding: 8px 15px;
+            background: #f0e5d8;
+            border-radius: 10px;
+        }
+
+        /* Contact */
+        .contact-box {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 20px;
+            background: #3b2922;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .button:hover {
+            background: #6b4938;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #765c4e;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px auto;
+                padding: 12px;
+            }
+
+            header {
+                padding: 35px 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            section {
+                padding: 22px 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Your Name</h1>
-    <p>
-        Email: your@email.com |
-        Phone: +91 XXXXX XXXXX
-    </p>
+<div class="container">
 
-    <hr>
+    <!-- HEADER -->
+    <header>
+        <h1>Adya R</h1>
 
-    <h2>Career Objective</h2>
-    <p>
-        A motivated student interested in technology and data analytics,
-        looking to develop technical and problem-solving skills.
-    </p>
+        <p>B.Sc. Computer Science | Data Analytics</p>
 
-    <h2>Education</h2>
-    <ul>
-        <li>B.Sc. Computer Science / Data Analytics – Your College</li>
-        <li>Class 12 – CBSE</li>
-        <li>Class 10 – CBSE</li>
-    </ul>
+        <div class="contact">
+            <a href="mailto:bsccs40@email.com">Email</a>
+            |
+            <a href="https://github.com/bscs40-debug">GitHub</a>
+            |
+            <a href="#">LinkedIn</a>
+        </div>
+    </header>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>C Programming</li>
-        <li>HTML</li>
-        <li>Data Analytics</li>
-        <li>Problem Solving</li>
-    </ul>
 
-    <h2>Projects</h2>
-    <h3>Personal Resume Website</h3>
-    <p>
-        Created a personal resume website using HTML and hosted it using GitHub Pages.
-    </p>
+    <!-- ABOUT -->
+    <section>
+        <h2>About Me</h2>
 
-    <h2>Certifications</h2>
-    <ul>
-        <li>Certification Name – Organization</li>
-    </ul>
+        <p class="about">
+            I am a motivated undergraduate student interested in
+            technology, data analytics and problem solving. I am
+            currently developing my programming and analytical skills
+            through academic projects and practical learning.
+        </p>
+    </section>
 
-    <h2>Languages</h2>
-    <ul>
-        <li>English</li>
-        <li>Malayalam</li>
-        <li>Hindi</li>
-    </ul>
 
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <h3>B.Sc. Computer Science / Data Analytics</h3>
+            <p>rajagiri college of social sciences</p>
+            <p class="year">2026 – Present</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Class 12 – CBSE</h3>
+            <p>CBSE</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Class 10 – CBSE</h3>
+            <p>CBSE</p>
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <span class="skill">C Programming</span>
+            <span class="skill">HTML</span>
+            <span class="skill">Data Analytics</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Communication</span>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Personal Resume Website</h3>
+
+            <p>
+                Created a personal resume website using HTML and CSS
+                and deployed it using GitHub Pages.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section>
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>Certification Name – Organization</li>
+        </ul>
+    </section>
+
+
+    <!-- LANGUAGES -->
+    <section>
+        <h2>Languages</h2>
+
+        <div class="languages">
+            <span class="language">English</span>
+            <span class="language">Malayalam</span>
+            <span class="language">Hindi</span>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-box">
+        <h2>Contact</h2>
+
+        <p>Interested in connecting? Feel free to reach out.</p>
+
+        <a class="button" href="mailto:your@email.com">
+            Contact Me
+        </a>
+    </section>
+
+
+    <footer>
+        © 2026 Adya R · Personal Resume Website
+    </footer>
+
+</div>
 
 </body>
 </html>
